@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+<html lang="es-DO">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valdez & Asociados – Clínica Jurídica | Santo Domingo, RD</title>
+  <meta name="description" content="Clínica jurídica en Santo Domingo, República Dominicana. Derecho de familia, inmobiliario, laboral, comercial y migratorio. Primera consulta orientativa gratuita. Llámanos o escríbenos por WhatsApp." />
+  <meta property="og:title" content="Valdez & Asociados – Clínica Jurídica" />
+  <meta property="og:description" content="Tu problema legal tiene solución. Empecemos por entenderlo. Clínica jurídica en Santo Domingo, RD." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_DO" />
+  <meta name="theme-color" content="#1C3028" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231C3028'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='18' font-weight='bold' fill='%23C85D38'>V</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* ============================================================
+       VARIABLES CSS
+       ============================================================ */
+    :root {
+      --color-forest:    #1C3028;
+      --color-forest-dk: #111e19;
+      --color-forest-lt: #2a4a38;
+      --color-cream:     #F4EFE4;
+      --color-cream-dk:  #EBE4D5;
+      --color-terra:     #C85D38;
+      --color-terra-lt:  #d9714e;
+      --color-slate:     #4A5568;
+      --color-slate-lt:  #718096;
+      --color-white:     #FFFFFF;
+      --color-ink:       #1a1a1a;
+      --color-border:    #d6cfc0;
+      --color-success:   #276749;
+      --font-serif: 'Fraunces', Georgia, serif;
+      --font-sans:  'Inter', system-ui, sans-serif;
+      --section-pad: clamp(4rem, 8vw, 7rem);
+      --container:   min(90rem, 90%);
+      --gap-lg:      clamp(2rem, 4vw, 3.5rem);
+      --radius-sm: 0.5rem;
+      --radius-md: 1rem;
+      --radius-lg: 1.5rem;
+      --radius-xl: 2.5rem;
+      --shadow-sm: 0 2px 8px rgba(28,48,40,0.08);
+      --shadow-md: 0 8px 32px rgba(28,48,40,0.12);
+      --shadow-lg: 0 20px 60px rgba(28,48,40,0.18);
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+      --dur:  0.4s;
+    }
+
+    /* ============================================================
+       RESET & BASE
+       ============================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--font-sans);
+      background: var(--color-cream);
+      color: var(--color-ink);
+      line-height: 1.65;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button { cursor: pointer; font-family: inherit; border: none; background: none; }
+    ul, ol { list-style: none; }
+    :focus-visible { outline: 3px solid var(--color-terra); outline-offset: 3px; border-radius: 3px; }
+
+    /* ============================================================
+       TIPOGRAFÍA
+       ============================================================ */
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      line-height: 1.15;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+    h1 { font-size: clamp(2.8rem, 6vw, 5.5rem); }
+    h2 { font-size: clamp(2rem, 4vw, 3.2rem); }
+    h3 { font-size: clamp(1.3rem, 2.5vw, 1.7rem); }
+    p { font-size: clamp(0.95rem, 1.5vw, 1.05rem); color: var(--color-slate); }
+    .container { width: var(--container); margin-inline: auto; }
+
+    /* ============================================================
+       COMPONENTES
+       ============================================================ */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.875rem 1.75rem;
+      border-radius: 100px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: all var(--dur) var(--ease);
+      white-space: nowrap;
+    }
+    .btn-primary {
+      background: var(--color-terra);
+      color: var(--color-white);
+      box-shadow: 0 4px 20px rgba(200,93,56,0.35);
+    }
+    .btn-primary:hover {
+      background: var(--color-terra-lt);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(200,93,56,0.45);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--color-forest);
+      border: 2px solid var(--color-forest);
+    }
+    .btn-outline:hover {
+      background: var(--color-forest);
+      color: var(--color-white);
+      transform: translateY(-2px);
+    }
+    .btn-outline-light {
+      background: transparent;
+      color: var(--color-cream);
+      border: 2px solid rgba(244,239,228,0.4);
+    }
+    .btn-outline-light:hover {
+      background: rgba(244,239,228,0.12);
+      border-color: var(--color-cream);
+      transform: translateY(-2px);
+    }
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-terra);
+      margin-bottom: 1rem;
+    }
+    .section-label::before {
+      content: '';
+      width: 1.5rem;
+      height: 2px;
+      background: var(--color-terra);
+      display: block;
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-left {
+      opacity: 0;
+      transform: translateX(-40px);
+      transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+    }
+    .reveal-left.visible { opacity: 1; transform: translateX(0); }
+    .reveal-right {
+      opacity: 0;
+      transform: translateX(40px);
+      transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+    }
+    .reveal-right.visible { opacity: 1; transform: translateX(0); }
+
+    /* ============================================================
+       1. NAVBAR
+       ============================================================ */
+    #navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 1.2rem 0;
+      transition: background var(--dur) var(--ease), box-shadow var(--dur) var(--ease), padding var(--dur);
+    }
+    #navbar.scrolled {
+      background: rgba(28,48,40,0.97);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      padding: 0.8rem 0;
+      box-shadow: 0 4px 30px rgba(0,0,0,0.2);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .nav-logo {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--color-cream);
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+    .nav-logo span { color: var(--color-terra); }
+    .nav-logo small {
+      display: block;
+      font-family: var(--font-sans);
+      font-size: 0.65rem;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(244,239,228,0.55);
+      margin-top: 0.1rem;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+    .nav-links a {
+      color: rgba(244,239,228,0.8);
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color var(--dur);
+    }
+    .nav-links a:hover { color: var(--color-cream); }
+    .nav-cta { display: flex; align-items: center; gap: 1rem; }
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      padding: 6px;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px; height: 2px;
+      background: var(--color-cream);
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+    .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: var(--color-forest-dk);
+      z-index: 999;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5rem;
+      opacity: 0;
+      transition: opacity 0.3s var(--ease);
+    }
+    .mobile-menu.open { display: flex; opacity: 1; }
+    .mobile-menu a {
+      font-family: var(--font-serif);
+      font-size: clamp(1.8rem,5vw,2.5rem);
+      color: var(--color-cream);
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .mobile-menu a:hover { color: var(--color-terra); }
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .nav-cta .btn { display: none; }
+    }
+
+    /* ============================================================
+       2. HERO
+       ============================================================ */
+    #hero {
+      min-height: 100svh;
+      background: var(--color-forest);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      padding-top: 6rem;
+      padding-bottom: 4rem;
+    }
+    .hero-bg-shape {
+      position: absolute;
+      right: -5%; top: 50%;
+      transform: translateY(-50%);
+      width: clamp(300px,50vw,680px);
+      height: clamp(300px,50vw,680px);
+      opacity: 0.07;
+      pointer-events: none;
+    }
+    .hero-accent-circle {
+      position: absolute;
+      width: 200px; height: 200px;
+      border-radius: 50%;
+      border: 2px solid var(--color-terra);
+      opacity: 0.15;
+      top: 15%; left: -60px;
+      animation: float 8s ease-in-out infinite;
+    }
+    .hero-accent-dot {
+      position: absolute;
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--color-terra);
+      opacity: 0.5;
+    }
+    @keyframes float {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(200,93,56,0.15);
+      border: 1px solid rgba(200,93,56,0.3);
+      color: var(--color-terra);
+      padding: 0.35rem 0.85rem;
+      border-radius: 100px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+    .hero-tag .dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--color-terra);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%,100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.8); }
+    }
+    .hero-title {
+      color: var(--color-cream);
+      font-size: clamp(2.6rem,5.5vw,5rem);
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+    .hero-title em { font-style: italic; color: var(--color-terra); }
+    .hero-subtitle {
+      color: rgba(244,239,228,0.7);
+      font-size: clamp(1rem,1.8vw,1.2rem);
+      max-width: 36ch;
+      margin-bottom: 2.5rem;
+      line-height: 1.7;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
+    .hero-trust {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      padding-top: 2.5rem;
+      border-top: 1px solid rgba(244,239,228,0.1);
+    }
+    .trust-num {
+      font-family: var(--font-serif);
+      font-size: clamp(1.8rem,3vw,2.6rem);
+      font-weight: 700;
+      color: var(--color-cream);
+      line-height: 1;
+    }
+    .trust-label {
+      font-size: 0.8rem;
+      color: rgba(244,239,228,0.5);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-top: 0.25rem;
+    }
+    .hero-illustration { width: 100%; max-width: 480px; height: auto; }
+    @media (max-width: 768px) {
+      .hero-grid { grid-template-columns: 1fr; text-align: center; }
+      .hero-visual { display: none; }
+      .hero-subtitle { max-width: 100%; margin-inline: auto; }
+      .hero-actions { justify-content: center; }
+      .hero-trust { justify-content: center; }
+    }
+
+    /* ============================================================
+       3. SELECTOR INTERACTIVO
+       ============================================================ */
+    #situacion { padding: var(--section-pad) 0; background: var(--color-cream); }
+    .situacion-header { text-align: center; max-width: 50ch; margin-inline: auto; margin-bottom: var(--gap-lg); }
+    .situacion-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .caso-card {
+      background: var(--color-white);
+      border: 2px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 1.4rem 1.2rem;
+      cursor: pointer;
+      transition: all var(--dur) var(--ease);
+      position: relative;
+      overflow: hidden;
+    }
+    .caso-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--color-forest);
+      opacity: 0;
+      transition: opacity var(--dur) var(--ease);
+      z-index: 0;
+    }
+    .caso-card > * { position: relative; z-index: 1; }
+    .caso-card:hover { border-color: var(--color-terra); transform: translateY(-4px); box-shadow: var(--shadow-md); }
+    .caso-card.active { border-color: var(--color-terra); box-shadow: var(--shadow-md); }
+    .caso-card.active::before { opacity: 1; }
+    .caso-card.active .caso-icon { background: rgba(200,93,56,0.2); }
+    .caso-card.active .caso-title { color: var(--color-cream); }
+    .caso-card.active .caso-short { color: rgba(244,239,228,0.6); }
+    .caso-icon {
+      width: 44px; height: 44px;
+      border-radius: var(--radius-sm);
+      background: var(--color-cream-dk);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0.75rem;
+      transition: background var(--dur);
+    }
+    .caso-icon svg { width: 22px; height: 22px; }
+    .caso-title {
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--color-forest);
+      margin-bottom: 0.3rem;
+      line-height: 1.3;
+      transition: color var(--dur);
+    }
+    .caso-short { font-size: 0.78rem; color: var(--color-slate-lt); transition: color var(--dur); }
+    .situacion-panel {
+      background: var(--color-forest);
+      border-radius: var(--radius-xl);
+      padding: clamp(2rem,4vw,3rem);
+      min-height: 200px;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      overflow: hidden;
+    }
+    .panel-icon {
+      flex-shrink: 0;
+      width: 64px; height: 64px;
+      background: rgba(200,93,56,0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .panel-icon svg { width: 32px; height: 32px; }
+    .panel-tag {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-terra);
+      margin-bottom: 0.6rem;
+    }
+    .panel-title {
+      font-family: var(--font-serif);
+      font-size: clamp(1.4rem,2.5vw,1.8rem);
+      color: var(--color-cream);
+      margin-bottom: 0.75rem;
+    }
+    .panel-text {
+      color: rgba(244,239,228,0.72);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      max-width: 60ch;
+      margin-bottom: 1.25rem;
+    }
+    @media (max-width: 600px) { .situacion-panel { flex-direction: column; } }
+
+    /* ============================================================
+       4. ÁREAS
+       ============================================================ */
+    #areas { padding: var(--section-pad) 0; background: var(--color-cream-dk); }
+    .areas-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: end;
+      margin-bottom: var(--gap-lg);
+    }
+    .areas-header p { max-width: 40ch; }
+    .areas-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
+      gap: 1.25rem;
+    }
+    .area-card {
+      background: var(--color-cream);
+      border-radius: var(--radius-lg);
+      padding: 2rem 1.75rem;
+      border: 1px solid var(--color-border);
+      position: relative;
+      overflow: hidden;
+      transition: all var(--dur) var(--ease);
+    }
+    .area-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 100%; height: 3px;
+      background: var(--color-terra);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform var(--dur) var(--ease);
+    }
+    .area-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
+    .area-card:hover::after { transform: scaleX(1); }
+    .area-icon {
+      width: 52px; height: 52px;
+      border-radius: var(--radius-md);
+      background: rgba(28,48,40,0.06);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+      transition: background var(--dur);
+    }
+    .area-card:hover .area-icon { background: rgba(200,93,56,0.1); }
+    .area-icon svg { width: 26px; height: 26px; }
+    .area-title { font-family: var(--font-serif); font-size: 1.15rem; font-weight: 600; color: var(--color-forest); margin-bottom: 0.5rem; }
+    .area-desc { font-size: 0.88rem; color: var(--color-slate); line-height: 1.6; }
+    @media (max-width: 700px) { .areas-header { grid-template-columns: 1fr; } }
+
+    /* ============================================================
+       5. PROCESO
+       ============================================================ */
+    #proceso { padding: var(--section-pad) 0; background: var(--color-forest); overflow: hidden; }
+    .proceso-header { text-align: center; margin-bottom: var(--gap-lg); }
+    .proceso-header h2 { color: var(--color-cream); }
+    .proceso-header p { color: rgba(244,239,228,0.6); max-width: 40ch; margin-inline: auto; }
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 2rem;
+      position: relative;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      top: 2.5rem; left: 0; right: 0;
+      height: 2px;
+      background: rgba(244,239,228,0.12);
+    }
+    .timeline-line-progress {
+      position: absolute;
+      top: 2.5rem; left: 0;
+      height: 2px;
+      background: var(--color-terra);
+      width: 0%;
+      transition: width 1.5s var(--ease);
+      z-index: 1;
+    }
+    .timeline-step {
+      position: relative;
+      text-align: center;
+      padding-top: 5.5rem;
+    }
+    .step-num {
+      position: absolute;
+      top: 0; left: 50%;
+      transform: translateX(-50%);
+      width: 48px; height: 48px;
+      border-radius: 50%;
+      background: rgba(244,239,228,0.08);
+      border: 2px solid rgba(244,239,228,0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--color-cream);
+      z-index: 2;
+      transition: all 0.5s var(--ease);
+    }
+    .timeline-step.done .step-num {
+      background: var(--color-terra);
+      border-color: var(--color-terra);
+      box-shadow: 0 0 0 6px rgba(200,93,56,0.2);
+    }
+    .step-title { font-family: var(--font-serif); font-size: 1.15rem; color: var(--color-cream); margin-bottom: 0.5rem; }
+    .step-desc { font-size: 0.85rem; color: rgba(244,239,228,0.55); line-height: 1.6; }
+    .step-icon { width: 36px; height: 36px; margin: 0 auto 0.75rem; }
+    @media (max-width: 700px) {
+      .timeline { grid-template-columns: 1fr; gap: 2.5rem; }
+      .timeline::before { display: none; }
+      .timeline-line-progress { display: none; }
+      .timeline-step { padding-top: 0; padding-left: 4.5rem; text-align: left; }
+      .step-num { top: 0; left: 0; transform: none; }
+    }
+
+    /* ============================================================
+       6. EQUIPO
+       ============================================================ */
+    #equipo { padding: var(--section-pad) 0; background: var(--color-cream); }
+    .equipo-header { text-align: center; max-width: 50ch; margin-inline: auto; margin-bottom: var(--gap-lg); }
+    .equipo-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; }
+    .abogado-card {
+      background: var(--color-cream-dk);
+      border-radius: var(--radius-xl);
+      padding: 2.5rem 2rem;
+      text-align: center;
+      border: 1px solid var(--color-border);
+      transition: all var(--dur) var(--ease);
+    }
+    .abogado-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      background: var(--color-forest);
+    }
+    .abogado-card:hover .abogado-nombre { color: var(--color-cream); }
+    .abogado-card:hover .abogado-esp { color: var(--color-terra); }
+    .abogado-card:hover .abogado-frase { color: rgba(244,239,228,0.7); }
+    .abogado-avatar { width: 100px; height: 100px; border-radius: 50%; margin: 0 auto 1.25rem; }
+    .abogado-nombre { font-family: var(--font-serif); font-size: 1.25rem; color: var(--color-forest); margin-bottom: 0.3rem; transition: color var(--dur); }
+    .abogado-esp { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-terra); margin-bottom: 1rem; transition: color var(--dur); }
+    .abogado-frase { font-size: 0.88rem; color: var(--color-slate); line-height: 1.65; font-style: italic; transition: color var(--dur); }
+    @media (max-width: 700px) { .equipo-grid { grid-template-columns: 1fr; } }
+
+    /* ============================================================
+       7. TESTIMONIOS — contenido de ejemplo
+       ============================================================ */
+    #testimonios { padding: var(--section-pad) 0; background: var(--color-cream-dk); overflow: hidden; }
+    .test-header { text-align: center; margin-bottom: var(--gap-lg); }
+    .carousel-wrapper { position: relative; }
+    .carousel-track { display: flex; gap: 1.5rem; transition: transform 0.5s var(--ease); }
+    .testimonial-card {
+      flex: 0 0 calc(33.333% - 1rem);
+      background: var(--color-white);
+      border-radius: var(--radius-xl);
+      padding: 2.25rem;
+      border: 1px solid var(--color-border);
+      position: relative;
+    }
+    .testimonial-card::before {
+      content: '"';
+      position: absolute;
+      top: 1rem; right: 1.5rem;
+      font-family: var(--font-serif);
+      font-size: 5rem;
+      line-height: 1;
+      color: rgba(200,93,56,0.12);
+      font-weight: 700;
+    }
+    .test-stars { display: flex; gap: 0.25rem; margin-bottom: 1rem; }
+    .test-stars span { color: #e8a01a; font-size: 1rem; }
+    .test-text { font-size: 0.95rem; color: var(--color-slate); line-height: 1.7; margin-bottom: 1.5rem; }
+    .test-author { display: flex; align-items: center; gap: 0.75rem; }
+    .test-avatar {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--color-cream);
+    }
+    .test-name { font-weight: 600; font-size: 0.9rem; color: var(--color-forest); margin-bottom: 0.1rem; }
+    .test-area { font-size: 0.78rem; color: var(--color-slate-lt); }
+    .carousel-controls { display: flex; justify-content: center; gap: 0.75rem; margin-top: 2rem; }
+    .carousel-btn {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      border: 2px solid var(--color-border);
+      background: var(--color-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all var(--dur);
+      cursor: pointer;
+    }
+    .carousel-btn:hover { border-color: var(--color-terra); background: var(--color-terra); color: var(--color-white); }
+    .carousel-dots { display: flex; justify-content: center; gap: 0.5rem; margin-top: 1rem; }
+    .carousel-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--color-border);
+      cursor: pointer;
+      transition: all 0.3s;
+      border: none;
+    }
+    .carousel-dot.active { background: var(--color-terra); width: 24px; border-radius: 4px; }
+    @media (max-width: 900px) { .testimonial-card { flex: 0 0 80%; } }
+    @media (max-width: 500px) { .testimonial-card { flex: 0 0 90%; } }
+
+    /* ============================================================
+       8. FAQ
+       ============================================================ */
+    #faq { padding: var(--section-pad) 0; background: var(--color-cream); }
+    .faq-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 4rem; align-items: start; }
+    .faq-item { border-top: 1px solid var(--color-border); }
+    .faq-item:last-child { border-bottom: 1px solid var(--color-border); }
+    .faq-question {
+      width: 100%;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 0;
+      font-size: 0.97rem;
+      font-weight: 600;
+      color: var(--color-forest);
+      background: none;
+      border: none;
+      cursor: pointer;
+      gap: 1rem;
+      transition: color var(--dur);
+    }
+    .faq-question:hover { color: var(--color-terra); }
+    .faq-icon {
+      flex-shrink: 0;
+      width: 26px; height: 26px;
+      border-radius: 50%;
+      border: 2px solid var(--color-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all var(--dur);
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: var(--color-terra);
+    }
+    .faq-item.open .faq-icon {
+      background: var(--color-terra);
+      border-color: var(--color-terra);
+      color: var(--color-white);
+      transform: rotate(45deg);
+    }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.45s var(--ease); }
+    .faq-answer p { padding-bottom: 1.25rem; font-size: 0.92rem; line-height: 1.7; }
+    .faq-item.open .faq-answer { max-height: 500px; }
+    @media (max-width: 768px) { .faq-grid { grid-template-columns: 1fr; gap: 2rem; } }
+
+    /* ============================================================
+       9. CONTACTO
+       ============================================================ */
+    #contacto { padding: var(--section-pad) 0; background: var(--color-forest); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 4rem; align-items: start; }
+    .contact-aside h2 { color: var(--color-cream); margin-bottom: 1rem; }
+    .contact-aside > p { color: rgba(244,239,228,0.65); margin-bottom: 2rem; line-height: 1.7; }
+    .contact-info-list { display: flex; flex-direction: column; gap: 1.25rem; margin-bottom: 2rem; }
+    .contact-info-item { display: flex; align-items: flex-start; gap: 0.85rem; }
+    .ci-icon {
+      width: 38px; height: 38px;
+      border-radius: var(--radius-sm);
+      background: rgba(244,239,228,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .ci-icon svg { width: 18px; height: 18px; }
+    .ci-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(244,239,228,0.4); margin-bottom: 0.2rem; }
+    .ci-value { font-size: 0.92rem; color: rgba(244,239,228,0.85); font-weight: 500; }
+    .contact-form-box { background: var(--color-cream); border-radius: var(--radius-xl); padding: clamp(2rem,4vw,3rem); }
+    .form-title { font-family: var(--font-serif); font-size: 1.5rem; color: var(--color-forest); margin-bottom: 0.5rem; }
+    .form-subtitle { font-size: 0.88rem; color: var(--color-slate); margin-bottom: 1.75rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+    .form-group { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1rem; }
+    .form-group label { font-size: 0.8rem; font-weight: 600; color: var(--color-forest); letter-spacing: 0.03em; }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      padding: 0.75rem 1rem;
+      border: 1.5px solid var(--color-border);
+      border-radius: var(--radius-md);
+      font-family: var(--font-sans);
+      font-size: 0.92rem;
+      color: var(--color-ink);
+      background: var(--color-white);
+      transition: border-color 0.25s, box-shadow 0.25s;
+      outline: none;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--color-terra);
+      box-shadow: 0 0 0 3px rgba(200,93,56,0.12);
+    }
+    .form-group input.error,
+    .form-group select.error,
+    .form-group textarea.error { border-color: #e53e3e; }
+    .form-group .err-msg { font-size: 0.78rem; color: #e53e3e; display: none; }
+    .form-group.has-error .err-msg { display: block; }
+    .form-group textarea { min-height: 110px; resize: vertical; }
+    .form-group select { appearance: none; cursor: pointer; }
+    .form-actions { display: flex; flex-direction: column; gap: 0.75rem; }
+    .form-submit { width: 100%; justify-content: center; }
+    .form-divider { text-align: center; font-size: 0.78rem; color: var(--color-slate-lt); margin: 0.25rem 0; }
+    .btn-whatsapp {
+      width: 100%;
+      justify-content: center;
+      background: #25d366;
+      color: var(--color-white);
+      box-shadow: 0 4px 16px rgba(37,211,102,0.3);
+    }
+    .btn-whatsapp:hover { background: #1dbc58; transform: translateY(-2px); }
+    .form-success { display: none; text-align: center; padding: 2rem; }
+    .form-success.visible { display: block; }
+    .success-icon {
+      width: 64px; height: 64px;
+      border-radius: 50%;
+      background: rgba(39,103,73,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+    }
+    .form-success h3 { font-family: var(--font-serif); color: var(--color-forest); margin-bottom: 0.5rem; }
+    .form-success p { color: var(--color-slate); font-size: 0.9rem; }
+    @media (max-width: 768px) {
+      .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+
+    /* ============================================================
+       10. FOOTER
+       ============================================================ */
+    #footer { background: var(--color-forest-dk); padding: 4rem 0 2rem; }
+    .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 2.5rem; margin-bottom: 3rem; }
+    .footer-logo { font-family: var(--font-serif); font-size: 1.25rem; font-weight: 700; color: var(--color-cream); margin-bottom: 0.75rem; }
+    .footer-logo span { color: var(--color-terra); }
+    .footer-tagline { font-size: 0.85rem; color: rgba(244,239,228,0.45); line-height: 1.65; max-width: 28ch; margin-bottom: 1.5rem; }
+    .footer-social { display: flex; gap: 0.75rem; }
+    .social-link {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      border: 1px solid rgba(244,239,228,0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(244,239,228,0.5);
+      transition: all var(--dur);
+    }
+    .social-link:hover { border-color: var(--color-terra); color: var(--color-terra); background: rgba(200,93,56,0.1); }
+    .social-link svg { width: 16px; height: 16px; }
+    .footer-col h4 { font-family: var(--font-sans); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(244,239,228,0.4); margin-bottom: 1.25rem; }
+    .footer-col ul { display: flex; flex-direction: column; gap: 0.65rem; }
+    .footer-col ul li a { font-size: 0.88rem; color: rgba(244,239,228,0.65); transition: color var(--dur); }
+    .footer-col ul li a:hover { color: var(--color-terra); }
+    .footer-bottom {
+      border-top: 1px solid rgba(244,239,228,0.08);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .footer-bottom p { font-size: 0.78rem; color: rgba(244,239,228,0.3); }
+    .footer-disclaimer { font-size: 0.72rem; color: rgba(244,239,228,0.2); max-width: 55ch; line-height: 1.6; margin-top: 1rem; border-top: 1px solid rgba(244,239,228,0.05); padding-top: 1rem; }
+    @media (max-width: 900px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 500px) { .footer-grid { grid-template-columns: 1fr; } .footer-bottom { flex-direction: column; align-items: flex-start; } }
+
+    /* ============================================================
+       11. WHATSAPP FAB
+       ============================================================ */
+    #whatsapp-fab {
+      position: fixed;
+      bottom: 2rem; right: 2rem;
+      z-index: 900;
+      width: 60px; height: 60px;
+      border-radius: 50%;
+      background: #25d366;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.45);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      transition: all var(--dur) var(--ease);
+      animation: fabPulse 3s ease-in-out infinite;
+    }
+    #whatsapp-fab:hover { transform: scale(1.12); box-shadow: 0 8px 30px rgba(37,211,102,0.55); }
+    #whatsapp-fab svg { width: 30px; height: 30px; }
+    @keyframes fabPulse {
+      0%,100% { box-shadow: 0 4px 20px rgba(37,211,102,0.45); }
+      50% { box-shadow: 0 4px 30px rgba(37,211,102,0.7), 0 0 0 10px rgba(37,211,102,0.08); }
+    }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+  </style>
+</head>
+<body>
+
+<!-- FAB WhatsApp -->
+<a id="whatsapp-fab" href="https://wa.me/18090000000?text=Hola,%20me%20gustar%C3%ADa%20recibir%20orientaci%C3%B3n%20jur%C3%ADdica." target="_blank" rel="noopener noreferrer" aria-label="Contáctanos por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- Menú Móvil -->
+<nav class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Menú de navegación móvil">
+  <a href="#situacion" class="mobile-link">¿Tu situación?</a>
+  <a href="#areas" class="mobile-link">Áreas</a>
+  <a href="#equipo" class="mobile-link">Equipo</a>
+  <a href="#faq" class="mobile-link">Preguntas</a>
+  <a href="#contacto" class="mobile-link">Contacto</a>
+  <a href="https://wa.me/18090000000?text=Hola,%20quiero%20consulta%20gratuita." target="_blank" rel="noopener" class="btn btn-primary">WhatsApp</a>
+</nav>
+
+<!-- ===== 1. NAVBAR ===== -->
+<header id="navbar" role="banner">
+  <div class="container nav-inner">
+    <a href="#" class="nav-logo" aria-label="Valdez y Asociados inicio">
+      Valdez<span>&</span> Asoc.
+      <small>Clínica Jurídica · Santo Domingo, RD</small>
+    </a>
+    <nav class="nav-links" role="navigation" aria-label="Navegación principal">
+      <a href="#situacion">¿Tu situación?</a>
+      <a href="#areas">Áreas</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#equipo">Equipo</a>
+      <a href="#faq">Preguntas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="https://wa.me/18090000000?text=Hola,%20quiero%20consultar%20sobre%20un%20caso." target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="nav-whatsapp-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Consulta gratis
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== 2. HERO ===== -->
+<section id="hero" aria-label="Sección de inicio">
+  <svg class="hero-bg-shape" viewBox="0 0 500 500" fill="none" aria-hidden="true">
+    <circle cx="250" cy="250" r="200" stroke="rgba(244,239,228,1)" stroke-width="1"/>
+    <circle cx="250" cy="250" r="140" stroke="rgba(244,239,228,1)" stroke-width="1"/>
+    <circle cx="250" cy="250" r="80" stroke="rgba(244,239,228,1)" stroke-width="1"/>
+    <line x1="50" y1="250" x2="450" y2="250" stroke="rgba(244,239,228,1)" stroke-width="0.5"/>
+    <line x1="250" y1="50" x2="250" y2="450" stroke="rgba(244,239,228,1)" stroke-width="0.5"/>
+    <line x1="108" y1="108" x2="392" y2="392" stroke="rgba(244,239,228,0.5)" stroke-width="0.5"/>
+    <line x1="392" y1="108" x2="108" y2="392" stroke="rgba(244,239,228,0.5)" stroke-width="0.5"/>
+  </svg>
+  <div class="hero-accent-circle" aria-hidden="true"></div>
+  <div class="hero-accent-dot" style="top:20%;right:20%" aria-hidden="true"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-tag"><span class="dot" aria-hidden="true"></span>Santo Domingo · Primera consulta sin costo</div>
+        <h1 class="hero-title">Tu problema<br/>legal tiene<br/><em>solución.</em></h1>
+        <p class="hero-subtitle">Empecemos por entenderlo. En Valdez &amp; Asociados explicamos el derecho en lenguaje claro, sin laberinto de términos. Tú decides con información real.</p>
+        <div class="hero-actions">
+          <a href="https://wa.me/18090000000?text=Hola,%20quiero%20mi%20consulta%20inicial%20gratuita." target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="hero-whatsapp-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Escríbenos ahora
+          </a>
+          <a href="#situacion" class="btn btn-outline-light">Ver áreas de práctica <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a>
+        </div>
+        <div class="hero-trust" role="list">
+          <div class="trust-item" role="listitem">
+            <div class="trust-num"><span class="counter" data-target="15">0</span>+</div>
+            <div class="trust-label">Años de experiencia</div>
+          </div>
+          <div class="trust-item" role="listitem">
+            <div class="trust-num"><span class="counter" data-target="1200">0</span>+</div>
+            <div class="trust-label">Casos resueltos</div>
+          </div>
+          <div class="trust-item" role="listitem">
+            <div class="trust-num"><span class="counter" data-target="97">0</span>%</div>
+            <div class="trust-label">Clientes satisfechos</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <svg class="hero-illustration" viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="60" y="40" width="360" height="400" rx="28" fill="rgba(244,239,228,0.04)" stroke="rgba(244,239,228,0.1)" stroke-width="1.5"/>
+          <rect x="280" y="60" width="120" height="80" rx="16" fill="rgba(200,93,56,0.18)" stroke="rgba(200,93,56,0.3)" stroke-width="1"/>
+          <rect x="296" y="78" width="48" height="6" rx="3" fill="rgba(200,93,56,0.6)"/>
+          <rect x="296" y="92" width="72" height="4" rx="2" fill="rgba(244,239,228,0.25)"/>
+          <rect x="296" y="104" width="60" height="4" rx="2" fill="rgba(244,239,228,0.15)"/>
+          <circle cx="358" cy="118" r="12" fill="rgba(200,93,56,0.8)"/>
+          <path d="M352 118l4 4 8-8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="80" y="160" width="200" height="130" rx="18" fill="rgba(244,239,228,0.06)" stroke="rgba(244,239,228,0.12)" stroke-width="1"/>
+          <rect x="100" y="185" width="60" height="5" rx="2.5" fill="rgba(200,93,56,0.5)"/>
+          <rect x="100" y="200" width="160" height="8" rx="4" fill="rgba(244,239,228,0.3)"/>
+          <rect x="100" y="216" width="130" height="6" rx="3" fill="rgba(244,239,228,0.15)"/>
+          <rect x="100" y="230" width="145" height="6" rx="3" fill="rgba(244,239,228,0.15)"/>
+          <rect x="100" y="244" width="110" height="6" rx="3" fill="rgba(244,239,228,0.1)"/>
+          <rect x="100" y="265" width="90" height="14" rx="7" fill="rgba(200,93,56,0.7)"/>
+          <rect x="280" y="180" width="130" height="56" rx="16" fill="rgba(244,239,228,0.08)" stroke="rgba(244,239,228,0.12)" stroke-width="1"/>
+          <path d="M292 236 L280 250 L304 236Z" fill="rgba(244,239,228,0.08)"/>
+          <rect x="296" y="196" width="80" height="5" rx="2.5" fill="rgba(244,239,228,0.2)"/>
+          <rect x="296" y="208" width="100" height="4" rx="2" fill="rgba(244,239,228,0.12)"/>
+          <rect x="296" y="218" width="64" height="4" rx="2" fill="rgba(244,239,228,0.1)"/>
+          <rect x="80" y="315" width="100" height="104" rx="12" fill="rgba(244,239,228,0.04)" stroke="rgba(244,239,228,0.1)" stroke-width="1" transform="rotate(-6 80 315)"/>
+          <rect x="80" y="315" width="100" height="104" rx="12" fill="rgba(244,239,228,0.05)" stroke="rgba(244,239,228,0.1)" stroke-width="1" transform="rotate(-2 80 315)"/>
+          <rect x="80" y="315" width="100" height="104" rx="12" fill="rgba(244,239,228,0.07)" stroke="rgba(244,239,228,0.14)" stroke-width="1"/>
+          <rect x="96" y="334" width="64" height="5" rx="2.5" fill="rgba(244,239,228,0.25)"/>
+          <rect x="96" y="348" width="48" height="4" rx="2" fill="rgba(244,239,228,0.12)"/>
+          <rect x="96" y="360" width="56" height="4" rx="2" fill="rgba(244,239,228,0.12)"/>
+          <rect x="220" y="320" width="170" height="80" rx="14" fill="rgba(200,93,56,0.12)" stroke="rgba(200,93,56,0.2)" stroke-width="1"/>
+          <rect x="238" y="338" width="60" height="5" rx="2.5" fill="rgba(200,93,56,0.5)"/>
+          <rect x="238" y="356" width="120" height="6" rx="3" fill="rgba(244,239,228,0.1)"/>
+          <rect x="238" y="356" width="86" height="6" rx="3" fill="rgba(200,93,56,0.7)"/>
+          <path d="M420 80 L424 92 L436 92 L426 100 L430 112 L420 104 L410 112 L414 100 L404 92 L416 92Z" fill="rgba(200,93,56,0.3)" stroke="rgba(200,93,56,0.5)" stroke-width="0.5"/>
+          <circle cx="420" cy="300" r="6" fill="rgba(200,93,56,0.6)"/>
+          <circle cx="420" cy="300" r="12" stroke="rgba(200,93,56,0.2)" stroke-width="1"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 3. SELECTOR DE CASO ===== -->
+<section id="situacion" aria-labelledby="situacion-heading">
+  <div class="container">
+    <div class="situacion-header reveal">
+      <div class="section-label" aria-hidden="true">Tu punto de partida</div>
+      <h2 id="situacion-heading">¿Cuál es tu situación?</h2>
+      <p style="margin-top:0.75rem;">Selecciona el caso que más se parece a lo que estás viviendo y te decimos exactamente cómo podemos ayudarte.</p>
+    </div>
+    <div class="situacion-grid reveal" id="casoGrid" role="tablist" aria-label="Tipos de casos legales">
+      <div class="caso-card active" role="tab" aria-selected="true" tabindex="0" id="tab-divorcio" data-caso="divorcio">
+        <div class="caso-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="18" y1="8" x2="23" y2="13"/><line x1="23" y1="8" x2="18" y2="13"/></svg></div>
+        <div class="caso-title">Quiero divorciarme</div>
+        <div class="caso-short">Familia · Custodia · Pensión</div>
+      </div>
+      <div class="caso-card" role="tab" aria-selected="false" tabindex="0" id="tab-tierra" data-caso="tierra">
+        <div class="caso-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <div class="caso-title">Problema con mi terreno o título</div>
+        <div class="caso-short">Inmobiliario · Tierras · Título</div>
+      </div>
+      <div class="caso-card" role="tab" aria-selected="false" tabindex="0" id="tab-despido" data-caso="despido">
+        <div class="caso-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+        <div class="caso-title">Me despidieron</div>
+        <div class="caso-short">Laboral · Prestaciones · Desahucio</div>
+      </div>
+      <div class="caso-card" role="tab" aria-selected="false" tabindex="0" id="tab-empresa" data-caso="empresa">
+        <div class="caso-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+        <div class="caso-title">Quiero abrir una empresa</div>
+        <div class="caso-short">Comercial · SRL · SAS · Registro</div>
+      </div>
+      <div class="caso-card" role="tab" aria-selected="false" tabindex="0" id="tab-migracion" data-caso="migracion">
+        <div class="caso-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20M2 12h20M12 2a14.5 14.5 0 0 1 0 20"/></svg></div>
+        <div class="caso-title">Necesito residencia o visa</div>
+        <div class="caso-short">Migratorio · DGM · Naturalización</div>
+      </div>
+      <div class="caso-card" role="tab" aria-selected="false" tabindex="0" id="tab-herencia" data-caso="herencia">
+        <div class="caso-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M9 12h6M9 16h6M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2z"/></svg></div>
+        <div class="caso-title">Sucesión o herencia</div>
+        <div class="caso-short">Sucesiones · Testamento · Bienes</div>
+      </div>
+      <div class="caso-card" role="tab" aria-selected="false" tabindex="0" id="tab-penal" data-caso="penal">
+        <div class="caso-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div class="caso-title">Caso penal</div>
+        <div class="caso-short">Penal · Defensa · Querella</div>
+      </div>
+      <div class="caso-card" role="tab" aria-selected="false" tabindex="0" id="tab-otro" data-caso="otro">
+        <div class="caso-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M12 17h.01"/></svg></div>
+        <div class="caso-title">No sé bien mi situación</div>
+        <div class="caso-short">Orientación general gratuita</div>
+      </div>
+    </div>
+    <div class="situacion-panel reveal" id="situacionPanel" role="tabpanel" aria-live="polite">
+      <div class="panel-icon" id="panelIcon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#C85D38" stroke-width="2" stroke-linecap="round" aria-hidden="true" id="panelSvg" width="32" height="32">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+          <line x1="18" y1="8" x2="23" y2="13"/><line x1="23" y1="8" x2="18" y2="13"/>
+        </svg>
+      </div>
+      <div class="panel-body">
+        <div class="panel-tag" id="panelTag">Derecho de Familia</div>
+        <h3 class="panel-title" id="panelTitle">Entendemos que es un momento difícil</h3>
+        <p class="panel-text" id="panelText">Un divorcio en República Dominicana puede tramitarse por mutuo consentimiento o de forma contenciosa. El proceso incluye la disolución del vínculo, acuerdos sobre pensión alimenticia, guarda y custodia de los hijos, y la liquidación de bienes. Con la orientación correcta, muchos casos se resuelven sin conflicto innecesario.</p>
+        <a href="https://wa.me/18090000000?text=Hola,%20necesito%20orientaci%C3%B3n%20sobre%20un%20divorcio." target="_blank" rel="noopener" class="btn btn-primary" id="panelWhatsapp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Hablar sobre este caso
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 4. ÁREAS DE PRÁCTICA ===== -->
+<section id="areas" aria-labelledby="areas-heading">
+  <div class="container">
+    <div class="areas-header">
+      <div class="reveal">
+        <div class="section-label" aria-hidden="true">Especialidades</div>
+        <h2 id="areas-heading">Lo que<br/>manejamos</h2>
+      </div>
+      <div class="reveal" style="transition-delay:0.1s">
+        <p>Siete áreas del derecho dominicano, con abogados dedicados a cada una. Sin generalistas que prometen todo: aquí cada caso lo atiende quien lo conoce de verdad.</p>
+      </div>
+    </div>
+    <div class="areas-grid">
+      <article class="area-card reveal" style="transition-delay:0.05s">
+        <div class="area-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--color-forest)" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3 class="area-title">Derecho de Familia</h3>
+        <p class="area-desc">Divorcios, pensión alimenticia, custodia y tutela. Te acompañamos con claridad en los procesos más personales.</p>
+      </article>
+      <article class="area-card reveal" style="transition-delay:0.1s">
+        <div class="area-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--color-forest)" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <h3 class="area-title">Derecho Inmobiliario</h3>
+        <p class="area-desc">Saneamiento, deslindes, compraventas y regularización de títulos ante la Jurisdicción Inmobiliaria y el Tribunal de Tierras.</p>
+      </article>
+      <article class="area-card reveal" style="transition-delay:0.15s">
+        <div class="area-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--color-forest)" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+        <h3 class="area-title">Derecho Laboral</h3>
+        <p class="area-desc">Despidos, prestaciones laborales, contratos y conflictos con empleadores. Conocemos el Código de Trabajo y lo usamos a tu favor.</p>
+      </article>
+      <article class="area-card reveal" style="transition-delay:0.2s">
+        <div class="area-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--color-forest)" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3 class="area-title">Derecho Penal</h3>
+        <p class="area-desc">Defensa penal integral, querellas y representación ante el Ministerio Público. Tu libertad y reputación, protegidas desde el primer día.</p>
+      </article>
+      <article class="area-card reveal" style="transition-delay:0.25s">
+        <div class="area-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--color-forest)" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l1.27-.84a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+        <h3 class="area-title">Derecho Comercial</h3>
+        <p class="area-desc">Constitución de SRL y SAS, registro mercantil, contratos comerciales y resolución de conflictos entre socios.</p>
+      </article>
+      <article class="area-card reveal" style="transition-delay:0.3s">
+        <div class="area-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--color-forest)" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20M2 12h20M12 2a14.5 14.5 0 0 1 0 20"/></svg></div>
+        <h3 class="area-title">Derecho Migratorio</h3>
+        <p class="area-desc">Residencias, visas, permisos de trabajo y procesos de naturalización ante la Dirección General de Migración (DGM).</p>
+      </article>
+      <article class="area-card reveal" style="transition-delay:0.35s">
+        <div class="area-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--color-forest)" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M9 12h6M9 16h6M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2z"/></svg></div>
+        <h3 class="area-title">Sucesiones y Herencias</h3>
+        <p class="area-desc">Testamentos, declaratoria de herederos, partición de bienes y sucesiones intestadas. Protegemos el legado familiar con orden.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 5. PROCESO ===== -->
+<section id="proceso" aria-labelledby="proceso-heading">
+  <div class="container">
+    <div class="proceso-header reveal">
+      <div class="section-label" style="justify-content:center;color:rgba(200,93,56,0.9)" aria-hidden="true">Metodología</div>
+      <h2 id="proceso-heading">Cómo trabajamos</h2>
+      <p>Cuatro pasos simples, sin sorpresas en el camino.</p>
+    </div>
+    <div class="timeline" id="timeline" role="list">
+      <div class="timeline-line-progress" id="timelineProgress" aria-hidden="true"></div>
+      <div class="timeline-step" role="listitem">
+        <div class="step-num" aria-hidden="true">1</div>
+        <div class="step-icon"><svg viewBox="0 0 36 36" fill="none" stroke="rgba(244,239,228,0.5)" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M7 18c0-6 4-11 11-11"/><path d="M29 18c0 6-4 11-11 11"/><path d="M18 7l4 4-4 4"/><path d="M18 29l-4-4 4-4"/></svg></div>
+        <h3 class="step-title">Escuchamos</h3>
+        <p class="step-desc">Primera consulta orientativa para entender tu situación, sin juzgar y sin jerga legal.</p>
+      </div>
+      <div class="timeline-step" role="listitem">
+        <div class="step-num" aria-hidden="true">2</div>
+        <div class="step-icon"><svg viewBox="0 0 36 36" fill="none" stroke="rgba(244,239,228,0.5)" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="18" cy="18" r="10"/><path d="M18 13v5l3 3"/></svg></div>
+        <h3 class="step-title">Analizamos</h3>
+        <p class="step-desc">Revisamos documentos, identificamos riesgos y oportunidades, y estudiamos el caso con calma.</p>
+      </div>
+      <div class="timeline-step" role="listitem">
+        <div class="step-num" aria-hidden="true">3</div>
+        <div class="step-icon"><svg viewBox="0 0 36 36" fill="none" stroke="rgba(244,239,228,0.5)" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M10 20l6 6 10-12"/><rect x="6" y="6" width="24" height="24" rx="4"/></svg></div>
+        <h3 class="step-title">Te explicamos</h3>
+        <p class="step-desc">Presentamos la estrategia legal en palabras claras, con opciones reales y costos transparentes.</p>
+      </div>
+      <div class="timeline-step" role="listitem">
+        <div class="step-num" aria-hidden="true">4</div>
+        <div class="step-icon"><svg viewBox="0 0 36 36" fill="none" stroke="rgba(244,239,228,0.5)" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M6 18l8 8 16-16"/></svg></div>
+        <h3 class="step-title">Actuamos</h3>
+        <p class="step-desc">Ejecutamos cada paso del proceso legal, manteniéndote informado en todo momento.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 6. EQUIPO ===== -->
+<section id="equipo" aria-labelledby="equipo-heading">
+  <div class="container">
+    <div class="equipo-header reveal">
+      <div class="section-label" aria-hidden="true">Nuestro equipo</div>
+      <h2 id="equipo-heading">Las personas detrás del asesoramiento</h2>
+      <p style="margin-top:0.75rem;">Abogados con experiencia real en el sistema legal dominicano, que se toman el tiempo de explicar cada decisión.</p>
+    </div>
+    <div class="equipo-grid">
+      <article class="abogado-card reveal" style="transition-delay:0.05s">
+        <div class="abogado-avatar" aria-hidden="true">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+            <circle cx="50" cy="50" r="50" fill="#2a4a38"/>
+            <ellipse cx="50" cy="35" rx="18" ry="20" fill="#F4EFE4"/>
+            <ellipse cx="50" cy="82" rx="28" ry="20" fill="#1C3028"/>
+            <rect x="44" y="50" width="12" height="10" fill="#F4EFE4"/>
+            <polygon points="50,58 46,70 50,75 54,70" fill="#C85D38"/>
+            <text x="50" y="41" text-anchor="middle" font-family="Georgia,serif" font-size="16" font-weight="bold" fill="#1C3028">RM</text>
+          </svg>
+        </div>
+        <div class="abogado-nombre">Lic. Roberto Medina</div>
+        <div class="abogado-esp">Derecho Familiar e Inmobiliario</div>
+        <p class="abogado-frase">"Cada familia tiene una historia diferente. Mi trabajo es asegurarme de que el derecho cuente la tuya con exactitud."</p>
+      </article>
+      <article class="abogado-card reveal" style="transition-delay:0.15s">
+        <div class="abogado-avatar" aria-hidden="true">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+            <circle cx="50" cy="50" r="50" fill="#3a2e20"/>
+            <ellipse cx="50" cy="18" rx="17" ry="8" fill="#2a1a0a"/>
+            <ellipse cx="50" cy="35" rx="17" ry="19" fill="#e8d5c0"/>
+            <ellipse cx="50" cy="82" rx="28" ry="20" fill="#1C3028"/>
+            <rect x="44" y="50" width="12" height="10" fill="#e8d5c0"/>
+            <polygon points="50,58 46,70 50,75 54,70" fill="#C85D38"/>
+            <text x="50" y="41" text-anchor="middle" font-family="Georgia,serif" font-size="16" font-weight="bold" fill="#3a2e20">CV</text>
+          </svg>
+        </div>
+        <div class="abogado-nombre">Licda. Carmen Valdez</div>
+        <div class="abogado-esp">Derecho Penal y Constitucional</div>
+        <p class="abogado-frase">"La presunción de inocencia no es solo un principio: es la base desde donde construyo cada defensa."</p>
+      </article>
+      <article class="abogado-card reveal" style="transition-delay:0.25s">
+        <div class="abogado-avatar" aria-hidden="true">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+            <circle cx="50" cy="50" r="50" fill="#1a2838"/>
+            <ellipse cx="50" cy="35" rx="16" ry="18" fill="#dcc9b0"/>
+            <ellipse cx="50" cy="82" rx="28" ry="20" fill="#1C3028"/>
+            <rect x="44" y="50" width="12" height="10" fill="#dcc9b0"/>
+            <polygon points="50,58 46,70 50,75 54,70" fill="#C85D38"/>
+            <text x="50" y="41" text-anchor="middle" font-family="Georgia,serif" font-size="16" font-weight="bold" fill="#1a2838">JA</text>
+          </svg>
+        </div>
+        <div class="abogado-nombre">Lic. Juan Agramonte</div>
+        <div class="abogado-esp">Derecho Laboral y Comercial</div>
+        <p class="abogado-frase">"Abrir una empresa o defender tus derechos laborales son decisiones económicas. Yo me aseguro de que también sean decisiones legalmente seguras."</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 7. TESTIMONIOS — CONTENIDO DE EJEMPLO ===== -->
+<!-- Nota: Los testimonios a continuación son ejemplos de demostración. Reemplazar con testimonios reales de clientes verificados antes de publicar. -->
+<section id="testimonios" aria-labelledby="testimonios-heading">
+  <div class="container">
+    <div class="test-header reveal">
+      <div class="section-label" aria-hidden="true">Lo que dicen</div>
+      <h2 id="testimonios-heading">Clientes que encontraron claridad</h2>
+      <p style="margin-top:0.5rem;max-width:45ch;margin-inline:auto;">Casos reales de personas que pasaron de la incertidumbre a la solución.</p>
+    </div>
+    <div class="carousel-wrapper reveal">
+      <div style="overflow:hidden">
+        <div class="carousel-track" id="carouselTrack">
+          <!-- Testimonio de ejemplo 1 -->
+          <article class="testimonial-card" aria-label="Testimonio de María G.">
+            <div class="test-stars" aria-label="5 estrellas"><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span></div>
+            <p class="test-text">"Llegué aquí sin saber nada sobre el proceso de divorcio y con miedo de perder la custodia de mis hijos. En la primera cita me explicaron todo con calma, sin apresurarse. Tres meses después, tenemos un acuerdo que funciona para toda la familia."</p>
+            <div class="test-author">
+              <div class="test-avatar" style="background:linear-gradient(135deg,#C85D38,#d9714e)" aria-hidden="true">MG</div>
+              <div><div class="test-name">María G.</div><div class="test-area">Caso de familia · Piantini</div></div>
+            </div>
+          </article>
+          <!-- Testimonio de ejemplo 2 -->
+          <article class="testimonial-card" aria-label="Testimonio de Carlos R.">
+            <div class="test-stars" aria-label="5 estrellas"><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span></div>
+            <p class="test-text">"Tenía un lío con el título de un terreno que heredé en San Pedro. Me habían dicho que era imposible de resolver. Agramonte revisó los documentos, me explicó el camino ante el Tribunal de Tierras y lo resolvimos en seis meses. Increíble."</p>
+            <div class="test-author">
+              <div class="test-avatar" style="background:linear-gradient(135deg,#1C3028,#2a4a38)" aria-hidden="true">CR</div>
+              <div><div class="test-name">Carlos R.</div><div class="test-area">Caso inmobiliario · Gazcue</div></div>
+            </div>
+          </article>
+          <!-- Testimonio de ejemplo 3 -->
+          <article class="testimonial-card" aria-label="Testimonio de Jeniffer M.">
+            <div class="test-stars" aria-label="5 estrellas"><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span></div>
+            <p class="test-text">"Me despidieron sin justa causa después de 8 años trabajando. Pensé que no tenía caso. La Licda. Valdez lo vio diferente y al final recibí el doble de lo que esperaba. Totalmente recomendada."</p>
+            <div class="test-author">
+              <div class="test-avatar" style="background:linear-gradient(135deg,#8b4513,#a0522d)" aria-hidden="true">JM</div>
+              <div><div class="test-name">Jeniffer M.</div><div class="test-area">Caso laboral · Naco</div></div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-btn" id="prevBtn" aria-label="Testimonio anterior"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button class="carousel-btn" id="nextBtn" aria-label="Siguiente testimonio"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button>
+      </div>
+      <div class="carousel-dots" role="tablist" id="carouselDots" aria-label="Navegación del carrusel"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 8. FAQ ===== -->
+<section id="faq" aria-labelledby="faq-heading">
+  <div class="container">
+    <div class="faq-grid">
+      <div class="reveal-left">
+        <div class="section-label" aria-hidden="true">Dudas comunes</div>
+        <h2 id="faq-heading">Preguntas que casi siempre llegan antes de llamar</h2>
+        <p style="margin-top:1rem;margin-bottom:1.5rem;">Entendemos que el primer contacto da un poco de cosa. Aquí resolvemos las más comunes para que llegues con más confianza.</p>
+        <a href="https://wa.me/18090000000?text=Hola,%20tengo%20una%20pregunta%20y%20quisiera%20orientaci%C3%B3n." target="_blank" rel="noopener" class="btn btn-outline">Pregunta directamente</a>
+      </div>
+      <div class="faq-list reveal-right" id="faqList" role="list">
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq1">¿Cuánto cuesta la primera consulta?<span class="faq-icon" aria-hidden="true">+</span></button>
+          <div class="faq-answer" id="faq1" role="region"><p>La primera reunión de orientación es <strong>sin costo</strong>. Dura entre 30 y 45 minutos y su objetivo es entender tu situación y darte una visión honesta de tus opciones. Si decides continuar, discutimos los honorarios de forma transparente antes de firmar cualquier acuerdo.</p></div>
+        </div>
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq2">¿Qué documentos debo llevar a la primera cita?<span class="faq-icon" aria-hidden="true">+</span></button>
+          <div class="faq-answer" id="faq2" role="region"><p>Solo tu cédula y lo que tengas disponible relacionado al caso: contratos, notificaciones, títulos, sentencias, etc. No te preocupes si no tienes todo; la primera reunión es para escucharte, no para revisar expedientes completos.</p></div>
+        </div>
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq3">¿Cuánto tiempo tarda un divorcio en República Dominicana?<span class="faq-icon" aria-hidden="true">+</span></button>
+          <div class="faq-answer" id="faq3" role="region"><p>Un divorcio por mutuo consentimiento, bien documentado, puede finalizarse en <strong>3 a 6 meses</strong> aproximadamente. Los divorcios contenciosos dependen del calendario judicial y la complejidad del caso. Desde la primera reunión podemos darte una estimación más precisa.</p></div>
+        </div>
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq4">¿Todo lo que les cuente es confidencial?<span class="faq-icon" aria-hidden="true">+</span></button>
+          <div class="faq-answer" id="faq4" role="region"><p>Sí, absolutamente. El secreto profesional es un deber ético y legal para los abogados en República Dominicana. Todo lo que compartas con nuestro equipo queda estrictamente protegido, desde la primera conversación.</p></div>
+        </div>
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq5">¿Puedo resolver mi caso aunque esté fuera del país?<span class="faq-icon" aria-hidden="true">+</span></button>
+          <div class="faq-answer" id="faq5" role="region"><p>Sí. Muchos de nuestros clientes viven en el exterior y gestionamos sus casos de forma remota mediante videoconferencia, poder notarial y comunicación por WhatsApp. Indícanos tu situación y te explicamos cómo funciona en tu caso específico.</p></div>
+        </div>
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq6">¿Cómo se cobran los honorarios?<span class="faq-icon" aria-hidden="true">+</span></button>
+          <div class="faq-answer" id="faq6" role="region"><p>Depende del tipo de caso. Algunos se manejan con un monto fijo acordado al inicio; otros con pagos por etapas del proceso. Siempre firmamos un contrato de servicios antes de comenzar para que ambas partes tengan claridad absoluta.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 9. CONTACTO ===== -->
+<section id="contacto" aria-labelledby="contacto-heading">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-aside reveal-left">
+        <div class="section-label" style="color:rgba(200,93,56,0.9);" aria-hidden="true">Estamos aquí</div>
+        <h2 id="contacto-heading">Cuéntanos tu caso</h2>
+        <p>Escríbenos por el formulario o por WhatsApp. Respondemos en menos de 24 horas en días laborables. Sin compromiso.</p>
+        <div class="contact-info-list" role="list">
+          <div class="contact-info-item" role="listitem">
+            <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--color-cream)" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><div class="ci-label">Dirección</div><div class="ci-value">Av. Gustavo Mejía Ricart #45, Piantini<br/>Santo Domingo, Rep. Dominicana</div></div>
+          </div>
+          <div class="contact-info-item" role="listitem">
+            <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--color-cream)" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l1.27-.84a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div><div class="ci-label">Teléfono / WhatsApp</div><div class="ci-value">+1 (809) 000-0000</div></div>
+          </div>
+          <div class="contact-info-item" role="listitem">
+            <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--color-cream)" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div><div class="ci-label">Correo electrónico</div><div class="ci-value">consultas@valdezasociados.com.do</div></div>
+          </div>
+          <div class="contact-info-item" role="listitem">
+            <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--color-cream)" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+            <div><div class="ci-label">Horario de atención</div><div class="ci-value">Lun–Vie: 8:30 AM – 5:30 PM<br/>Sáb: 9:00 AM – 12:00 PM</div></div>
+          </div>
+        </div>
+        <div style="background:rgba(244,239,228,0.05);border:1px solid rgba(244,239,228,0.1);border-radius:var(--radius-lg);padding:1.25rem;display:flex;align-items:center;gap:0.75rem;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--color-terra)" stroke-width="1.8" width="24" height="24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div>
+            <div style="font-size:0.8rem;font-weight:600;color:rgba(244,239,228,0.7);">Piantini, Santo Domingo</div>
+            <div style="font-size:0.72rem;color:rgba(244,239,228,0.35);">Cerca de la Av. Abraham Lincoln</div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-box reveal-right">
+        <h3 class="form-title">Primera consulta sin costo</h3>
+        <p class="form-subtitle">Cuéntanos brevemente tu caso y un abogado se pondrá en contacto contigo.</p>
+        <form id="contactForm" novalidate aria-label="Formulario de contacto">
+          <div class="form-row">
+            <div class="form-group" id="fg-nombre">
+              <label for="inp-nombre">Nombre completo</label>
+              <input type="text" id="inp-nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" required />
+              <span class="err-msg" id="err-nombre">Por favor ingresa tu nombre.</span>
+            </div>
+            <div class="form-group" id="fg-telefono">
+              <label for="inp-telefono">Teléfono / WhatsApp</label>
+              <input type="tel" id="inp-telefono" name="telefono" placeholder="809-000-0000" autocomplete="tel" required />
+              <span class="err-msg" id="err-telefono">Por favor ingresa tu número.</span>
+            </div>
+          </div>
+          <div class="form-group" id="fg-tipo">
+            <label for="inp-tipo">Tipo de caso</label>
+            <select id="inp-tipo" name="tipo" required aria-required="true">
+              <option value="" disabled selected>Selecciona un área</option>
+              <option value="familia">Derecho de familia</option>
+              <option value="inmobiliario">Derecho inmobiliario</option>
+              <option value="laboral">Derecho laboral</option>
+              <option value="penal">Derecho penal</option>
+              <option value="comercial">Derecho comercial / empresa</option>
+              <option value="migratorio">Derecho migratorio</option>
+              <option value="sucesiones">Sucesiones y herencias</option>
+              <option value="otro">No estoy seguro</option>
+            </select>
+            <span class="err-msg" id="err-tipo">Selecciona el tipo de caso.</span>
+          </div>
+          <div class="form-group" id="fg-mensaje">
+            <label for="inp-mensaje">Cuéntanos brevemente</label>
+            <textarea id="inp-mensaje" name="mensaje" placeholder="Describe tu situación en pocas palabras..." required aria-required="true"></textarea>
+            <span class="err-msg" id="err-mensaje">Por favor describe tu situación.</span>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary form-submit" id="submitBtn">
+              Enviar mi consulta
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <div class="form-divider">o si prefieres hablar ahora mismo</div>
+            <a href="https://wa.me/18090000000?text=Hola,%20quiero%20orientaci%C3%B3n%20legal%20gratuita." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" id="form-whatsapp-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Escribir por WhatsApp
+            </a>
+          </div>
+        </form>
+        <div class="form-success" id="formSuccess" role="alert" aria-live="polite">
+          <div class="success-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-success)" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <h3>¡Formulario completado!</h3>
+          <p style="margin-top:0.5rem;">Se abrirá WhatsApp con los datos de tu consulta. Si no se abrió automáticamente, haz clic en el botón de abajo para continuar.</p>
+          <a href="https://wa.me/18090000000" id="btn-wa-fallback" target="_blank" rel="noopener" class="btn btn-whatsapp" style="display:inline-flex;margin-top:1.25rem;">Abrir WhatsApp ahora</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 10. FOOTER ===== -->
+<footer id="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Valdez<span>&</span> Asoc.</div>
+        <p class="footer-tagline">Clínica jurídica especializada en soluciones legales claras para personas y empresas en República Dominicana.</p>
+        <div class="footer-social" role="list" aria-label="Redes sociales">
+          <a href="#" class="social-link" role="listitem" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" class="social-link" role="listitem" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" class="social-link" role="listitem" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        </div>
+      </div>
+      <nav class="footer-col" aria-label="Áreas de práctica">
+        <h4>Áreas</h4>
+        <ul>
+          <li><a href="#areas">Derecho de familia</a></li>
+          <li><a href="#areas">Derecho inmobiliario</a></li>
+          <li><a href="#areas">Derecho laboral</a></li>
+          <li><a href="#areas">Derecho penal</a></li>
+          <li><a href="#areas">Derecho comercial</a></li>
+          <li><a href="#areas">Migratorio</a></li>
+          <li><a href="#areas">Sucesiones</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="Información de la firma">
+        <h4>La firma</h4>
+        <ul>
+          <li><a href="#equipo">Nuestro equipo</a></li>
+          <li><a href="#proceso">Cómo trabajamos</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#faq">Preguntas frecuentes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="tel:+18090000000">+1 (809) 000-0000</a></li>
+          <li><a href="mailto:consultas@valdezasociados.com.do">consultas@valdezasociados.com.do</a></li>
+          <li><a href="https://wa.me/18090000000" target="_blank" rel="noopener">WhatsApp directo</a></li>
+          <li style="color:rgba(244,239,228,0.45);font-size:0.85rem;margin-top:0.5rem;">Av. Gustavo Mejía Ricart #45<br/>Piantini, Santo Domingo</li>
+          <li style="color:rgba(244,239,228,0.45);font-size:0.85rem;margin-top:0.25rem;">Lun–Vie 8:30–5:30 PM<br/>Sáb 9:00–12:00 PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Valdez &amp; Asociados – Clínica Jurídica. Todos los derechos reservados.</p>
+      <p style="color:rgba(244,239,228,0.25);">Diseñado en República Dominicana 🇩🇴</p>
+    </div>
+    <p class="footer-disclaimer"><strong style="color:rgba(244,239,228,0.35);">Aviso legal:</strong> La información contenida en este sitio web tiene carácter meramente informativo y orientativo. No constituye asesoría legal ni crea una relación abogado-cliente. Para recibir asesoría específica sobre su situación, le invitamos a contactarnos directamente. La confidencialidad de su consulta está garantizada.</p>
+  </div>
+</footer>
+
+<script>
+/* === NAVBAR === */
+(function(){
+  const navbar=document.getElementById('navbar'),hamburger=document.getElementById('hamburger'),mobileMenu=document.getElementById('mobileMenu');
+  window.addEventListener('scroll',()=>navbar.classList.toggle('scrolled',window.scrollY>40),{passive:true});
+  function toggleMenu(open){hamburger.classList.toggle('open',open);mobileMenu.classList.toggle('open',open);hamburger.setAttribute('aria-expanded',String(open));document.body.style.overflow=open?'hidden':'';}
+  hamburger.addEventListener('click',()=>toggleMenu(!mobileMenu.classList.contains('open')));
+  mobileMenu.querySelectorAll('a').forEach(l=>l.addEventListener('click',()=>toggleMenu(false)));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')toggleMenu(false);});
+})();
+
+/* === SCROLL REVEAL === */
+(function(){
+  const els=document.querySelectorAll('.reveal,.reveal-left,.reveal-right');
+  if(!window.IntersectionObserver){els.forEach(e=>e.classList.add('visible'));return;}
+  const obs=new IntersectionObserver(entries=>{entries.forEach(en=>{if(en.isIntersecting){en.target.classList.add('visible');obs.unobserve(en.target);}});},{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(e=>obs.observe(e));
+})();
+
+/* === CONTADORES === */
+(function(){
+  const counters=document.querySelectorAll('.counter');
+  let started=false;
+  function go(){
+    if(started)return;
+    const r=document.getElementById('hero').getBoundingClientRect();
+    if(r.top<window.innerHeight&&r.bottom>0){
+      started=true;
+      counters.forEach(c=>{
+        const target=parseInt(c.dataset.target,10),dur=1800,step=16,inc=target/(dur/step);
+        let cur=0;
+        const t=setInterval(()=>{cur+=inc;if(cur>=target){cur=target;clearInterval(t);}c.textContent=Math.floor(cur).toLocaleString('es-DO');},step);
+      });
+    }
+  }
+  window.addEventListener('scroll',go,{passive:true});go();
+})();
+
+/* === SELECTOR DE CASO === */
+(function(){
+  const casos={
+    divorcio:{tag:'Derecho de Familia',title:'Entendemos que es un momento difícil',text:'Un divorcio en República Dominicana puede tramitarse por mutuo consentimiento o de forma contenciosa. El proceso incluye la disolución del vínculo, acuerdos sobre pensión alimenticia, guarda y custodia de los hijos, y la liquidación de bienes. Con la orientación correcta, muchos casos se resuelven sin conflicto innecesario.',waMsg:'Hola,%20necesito%20orientaci%C3%B3n%20sobre%20un%20divorcio.',icon:'<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="18" y1="8" x2="23" y2="13"/><line x1="23" y1="8" x2="18" y2="13"/>'},
+    tierra:{tag:'Derecho Inmobiliario',title:'Los problemas de título tienen solución legal',text:'Si compraste un terreno y hay conflictos con el título, un deslinde pendiente o un proceso de saneamiento incompleto, la Jurisdicción Inmobiliaria y el Tribunal de Tierras son las instancias correctas. Revisamos tu documentación y te decimos exactamente en qué punto está tu propiedad y qué pasos seguir.',waMsg:'Hola,%20tengo%20un%20problema%20con%20el%20t%C3%ADtulo%20de%20un%20terreno.',icon:'<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>'},
+    despido:{tag:'Derecho Laboral',title:'Tu empleador tiene obligaciones contigo',text:'El Código de Trabajo dominicano protege tus derechos en caso de despido. Si fue sin justa causa, tienes derecho a prestaciones laborales completas. Si fue con causa, te decimos si la justificación fue válida. Revisamos tu contrato, tu historial y evaluamos tu caso antes de cualquier paso.',waMsg:'Hola,%20me%20despidieron%20y%20necesito%20orientaci%C3%B3n%20laboral.',icon:'<rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>'},
+    empresa:{tag:'Derecho Comercial',title:'Formalizar tu negocio abre puertas',text:'Constituir una SRL o SAS en República Dominicana requiere registro en la Cámara de Comercio, elaboración de estatutos, designación de administradores y registro mercantil. Lo hacemos de forma ordenada, evitando errores comunes que luego generan problemas con la DGII o con tus socios.',waMsg:'Hola,%20quiero%20constituir%20una%20empresa%20en%20RD.',icon:'<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>'},
+    migracion:{tag:'Derecho Migratorio',title:'Cada situación migratoria es diferente',text:'La residencia temporal o permanente, visas de trabajo, reagrupación familiar y procesos de naturalización ante la Dirección General de Migración (DGM) tienen requisitos específicos. Te guiamos paso a paso, reuniendo la documentación correcta y siguiendo tu expediente hasta su resolución.',waMsg:'Hola,%20necesito%20orientaci%C3%B3n%20sobre%20residencia%20o%20visa%20en%20RD.',icon:'<circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20M2 12h20M12 2a14.5 14.5 0 0 1 0 20"/>'},
+    herencia:{tag:'Sucesiones y Herencias',title:'Proteger el patrimonio familiar es prioritario',text:'Los procesos sucesorios en RD incluyen la declaratoria de herederos, inventario de bienes, liquidación de deudas y partición del patrimonio. Si hay testamento o no, el proceso varía. Te explicamos las opciones disponibles para tu familia y actuamos con discreción.',waMsg:'Hola,%20necesito%20orientaci%C3%B3n%20sobre%20una%20herencia.',icon:'<path d="M9 12h6M9 16h6M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2z"/>'},
+    penal:{tag:'Derecho Penal',title:'Tu defensa comienza desde el primer momento',text:'Ante cualquier investigación penal, citación del Ministerio Público o detención, la representación legal inmediata marca la diferencia. Analizamos los cargos, revisamos el expediente y construimos la defensa más sólida posible desde el inicio del proceso.',waMsg:'Hola,%20necesito%20orientaci%C3%B3n%20sobre%20un%20caso%20penal.',icon:'<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>'},
+    otro:{tag:'Orientación General',title:'No importa si no tienes todo claro todavía',text:'Muchas personas llegan a nosotros sin saber exactamente qué tipo de ayuda legal necesitan. La primera consulta orientativa es precisamente para eso: escucharte, entender tu situación y decirte qué pasos legales son los correctos. Sin compromiso y sin costo.',waMsg:'Hola,%20no%20estoy%20seguro%20de%20qu%C3%A9%20tipo%20de%20ayuda%20legal%20necesito.',icon:'<circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M12 17h.01"/>'}
+  };
+  const cards=document.querySelectorAll('.caso-card'),panelTag=document.getElementById('panelTag'),panelTitle=document.getElementById('panelTitle'),panelText=document.getElementById('panelText'),panelSvg=document.getElementById('panelSvg'),panelWhatsapp=document.getElementById('panelWhatsapp'),panel=document.getElementById('situacionPanel');
+  function activate(key){
+    const d=casos[key];if(!d)return;
+    cards.forEach(c=>{const a=c.dataset.caso===key;c.classList.toggle('active',a);c.setAttribute('aria-selected',String(a));});
+    panel.style.opacity='0';panel.style.transform='translateY(8px)';
+    setTimeout(()=>{panelTag.textContent=d.tag;panelTitle.textContent=d.title;panelText.textContent=d.text;panelSvg.innerHTML=d.icon;panelWhatsapp.href=`https://wa.me/18090000000?text=${d.waMsg}`;panel.style.transition='opacity 0.35s ease,transform 0.35s ease';panel.style.opacity='1';panel.style.transform='translateY(0)';},150);
+  }
+  cards.forEach(c=>{c.addEventListener('click',()=>activate(c.dataset.caso));c.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();activate(c.dataset.caso);}});});
+})();
+
+/* === LÍNEA DE TIEMPO === */
+(function(){
+  const tl=document.getElementById('timeline'),steps=tl?tl.querySelectorAll('.timeline-step'):[],bar=document.getElementById('timelineProgress');
+  let done=false;
+  function go(){
+    if(done||!tl)return;
+    if(tl.getBoundingClientRect().top<window.innerHeight*0.85){
+      done=true;
+      steps.forEach((s,i)=>setTimeout(()=>{s.classList.add('done');if(bar)bar.style.width=`${((i+1)/steps.length)*100}%`;},i*300));
+    }
+  }
+  window.addEventListener('scroll',go,{passive:true});go();
+})();
+
+/* === CARRUSEL === */
+(function(){
+  const track=document.getElementById('carouselTrack'),prevBtn=document.getElementById('prevBtn'),nextBtn=document.getElementById('nextBtn'),dotsEl=document.getElementById('carouselDots');
+  if(!track)return;
+  const cards=track.querySelectorAll('.testimonial-card'),total=cards.length;
+  let cur=0;
+  cards.forEach((_,i)=>{const d=document.createElement('button');d.className='carousel-dot'+(i===0?' active':'');d.setAttribute('aria-label',`Testimonio ${i+1}`);d.setAttribute('role','tab');d.addEventListener('click',()=>goTo(i));dotsEl.appendChild(d);});
+  function getW(){const c=cards[0];if(!c)return 0;return c.getBoundingClientRect().width+(parseFloat(getComputedStyle(track).gap)||24);}
+  function goTo(i){cur=Math.max(0,Math.min(i,total-1));track.style.transform=`translateX(-${getW()*cur}px)`;dotsEl.querySelectorAll('.carousel-dot').forEach((d,j)=>d.classList.toggle('active',j===cur));}
+  prevBtn?.addEventListener('click',()=>goTo(cur-1));nextBtn?.addEventListener('click',()=>goTo(cur+1));
+  let auto=setInterval(()=>goTo((cur+1)%total),5000);
+  track.addEventListener('mouseenter',()=>clearInterval(auto));track.addEventListener('mouseleave',()=>{auto=setInterval(()=>goTo((cur+1)%total),5000);});
+  let sx=0;track.addEventListener('touchstart',e=>{sx=e.touches[0].clientX;},{passive:true});track.addEventListener('touchend',e=>{const d=sx-e.changedTouches[0].clientX;if(Math.abs(d)>50)goTo(d>0?cur+1:cur-1);},{passive:true});
+})();
+
+/* === FAQ === */
+(function(){
+  const list=document.getElementById('faqList');if(!list)return;
+  list.querySelectorAll('.faq-question').forEach(btn=>{btn.addEventListener('click',()=>{const item=btn.closest('.faq-item'),isOpen=item.classList.contains('open');list.querySelectorAll('.faq-item').forEach(e=>{e.classList.remove('open');e.querySelector('.faq-question').setAttribute('aria-expanded','false');});if(!isOpen){item.classList.add('open');btn.setAttribute('aria-expanded','true');}});});
+})();
+
+/* === FORMULARIO === */
+(function(){
+  const form=document.getElementById('contactForm'),success=document.getElementById('formSuccess');if(!form)return;
+  function vf(id,gid){const i=document.getElementById(id),g=document.getElementById(gid);if(!i||!g)return true;const v=i.value.trim().length>0;g.classList.toggle('has-error',!v);i.classList.toggle('error',!v);return v;}
+  form.addEventListener('submit',e=>{
+    e.preventDefault();
+    if(!vf('inp-nombre','fg-nombre')|!vf('inp-telefono','fg-telefono')||!vf('inp-tipo','fg-tipo')||!vf('inp-mensaje','fg-mensaje'))return;
+    const btn=document.getElementById('submitBtn');btn.textContent='Redirigiendo a WhatsApp...';btn.disabled=true;
+    
+    const nombre = document.getElementById('inp-nombre').value.trim();
+    const telefono = document.getElementById('inp-telefono').value.trim();
+    const sel = document.getElementById('inp-tipo');
+    const tipo = sel.options[sel.selectedIndex].text;
+    const mensaje = document.getElementById('inp-mensaje').value.trim();
+    
+    let waText = `Hola, quisiera realizar una consulta.%0A%0A`;
+    waText += `*Nombre:* ${nombre}%0A`;
+    waText += `*Teléfono:* ${telefono}%0A`;
+    waText += `*Tipo de caso:* ${tipo}%0A`;
+    waText += `*Mensaje:* ${mensaje}`;
+    
+    const waLink = `https://wa.me/18090000000?text=${waText}`;
+    
+    setTimeout(()=>{
+      window.open(waLink, '_blank');
+      document.getElementById('btn-wa-fallback').href = waLink;
+      form.style.display='none';
+      success.classList.add('visible');
+    }, 800);
+  });
+  ['nombre','telefono','tipo','mensaje'].forEach(k=>{const i=document.getElementById('inp-'+k);if(!i)return;i.addEventListener('input',()=>{if(i.value.trim()){document.getElementById('fg-'+k)?.classList.remove('has-error');i.classList.remove('error');}});});
+})();
+
+/* === SMOOTH SCROLL === */
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){const id=this.getAttribute('href');if(id==='#')return;const t=document.querySelector(id);if(t){e.preventDefault();const nh=document.getElementById('navbar')?.offsetHeight||0;window.scrollTo({top:t.getBoundingClientRect().top+window.scrollY-nh-8,behavior:'smooth'});}});});
+</script>
+</body>
+</html>
